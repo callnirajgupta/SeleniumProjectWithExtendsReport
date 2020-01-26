@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="24.494318">
+<testcase classname="dfgfg" name="DataProvider1" time="9.271175">
+<system-out><![CDATA[Given user enter url fromm rownum "2".......................................passed
+When user enter username and password from rownum "2".......................passed
+Then user get the details...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="dfgfg" name="DataProvider1_2" time="7.65107">
+<system-out><![CDATA[Given user enter url fromm rownum "3".......................................passed
+When user enter username and password from rownum "3".......................passed
+Then user get the details...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="dfgfg" name="DataProvider1_3" time="7.572073">
+<system-out><![CDATA[Given user enter url fromm rownum "4".......................................passed
+When user enter username and password from rownum "4".......................passed
+Then user get the details...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

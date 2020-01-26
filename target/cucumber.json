@@ -1,0 +1,331 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3600011072,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStep.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "DataProvider1",
+        "description": "",
+        "id": "dfgfg;dataprovider1;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2340094402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStep.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3329200331,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user enter url fromm rownum \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.user_enter_url_fromm_rownum(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1791057,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user enter username and password from rownum \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinition.user_enter_username_and_password_from_rownum(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78373,
+              "status": "passed"
+            },
+            "output": [
+              "I am inside tear down"
+            ],
+            "line": 73,
+            "name": "user get the details",
+            "match": {
+              "location": "StepDefinition.user_get_the_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regerssion"
+          },
+          {
+            "line": 69,
+            "name": "@DataProvider1"
+          },
+          {
+            "line": 1,
+            "name": "@feature"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2716910300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStep.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 78,
+        "name": "DataProvider1",
+        "description": "",
+        "id": "dfgfg;dataprovider1;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2338152508,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStep.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2595642435,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user enter url fromm rownum \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.user_enter_url_fromm_rownum(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 348321,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user enter username and password from rownum \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinition.user_enter_username_and_password_from_rownum(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16794,
+              "status": "passed"
+            },
+            "output": [
+              "I am inside tear down"
+            ],
+            "line": 73,
+            "name": "user get the details",
+            "match": {
+              "location": "StepDefinition.user_get_the_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regerssion"
+          },
+          {
+            "line": 69,
+            "name": "@DataProvider1"
+          },
+          {
+            "line": 1,
+            "name": "@feature"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2605443956,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStep.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 79,
+        "name": "DataProvider1",
+        "description": "",
+        "id": "dfgfg;dataprovider1;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 2352949958,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CommonStep.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2612637730,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user enter url fromm rownum \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinition.user_enter_url_fromm_rownum(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1020396,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user enter username and password from rownum \"4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinition.user_enter_username_and_password_from_rownum(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21148,
+              "status": "passed"
+            },
+            "output": [
+              "I am inside tear down"
+            ],
+            "line": 73,
+            "name": "user get the details",
+            "match": {
+              "location": "StepDefinition.user_get_the_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regerssion"
+          },
+          {
+            "line": 69,
+            "name": "@DataProvider1"
+          },
+          {
+            "line": 1,
+            "name": "@feature"
+          }
+        ]
+      }
+    ],
+    "name": "dfgfg",
+    "description": "",
+    "id": "dfgfg",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/FeatureFile.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@feature"
+      },
+      {
+        "line": 1,
+        "name": "@regerssion"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.manmohan.SampleSeleniumProject.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 26.357 sec <<< FAILURE! - in com.manmohan.SampleSeleniumProject.TestRunner
+When user enter userid and password(Scenario: SCR001)  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: failed
+
+Scenario: SCR001  Time elapsed: 0.006 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: failed
+
