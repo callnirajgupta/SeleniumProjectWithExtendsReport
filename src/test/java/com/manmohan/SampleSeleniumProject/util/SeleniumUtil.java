@@ -90,7 +90,7 @@ public class SeleniumUtil {
 	}
 	
 	public static String takeScreenShotReturnPath() throws IOException{
-		String screenShotFolder=System.getProperty("user.dir")+"//src//test//resources//ScreenShot//";
+		String screenShotFolder=System.getProperty("user.dir")+"\\src\\test\\resources\\ScreenShot\\";
 		Date date= new Date();
 		Long time=date.getTime();
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

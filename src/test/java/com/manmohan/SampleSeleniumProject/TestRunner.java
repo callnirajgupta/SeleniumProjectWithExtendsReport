@@ -25,6 +25,8 @@ public class TestRunner {
 	
 	@BeforeClass
 	public static void beforeclass(){
+		
+		
 		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"/target/test-report.html");
 		extent = new ExtentReports();
 	    extent.attachReporter(htmlReporter);
@@ -33,9 +35,6 @@ public class TestRunner {
 	    extent.setSystemInfo("OS", System.getProperty("os.name"));
 	    extent.setSystemInfo("Browser", "browser");
 	    
-	    //configuration items to change the look and feel
-	    //add content, manage tests etc
-	    //htmlReporter.config().setChartVisibilityOnOpen(true);
 	    htmlReporter.config().setDocumentTitle("Extent Report Demo");
 	    htmlReporter.config().setReportName("Test Report");
 	    

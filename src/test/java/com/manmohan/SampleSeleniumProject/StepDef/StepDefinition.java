@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -196,17 +197,26 @@ public class StepDefinition {
     	
     	System.out.println("pritn the value"+xls.getCellData(CommonStep.getScenarioName(), "URL", 2));
     	Login.enterUrl(xls.getCellData(CommonStep.getScenarioName(), "URL", 2));
+    	Thread.sleep(2000);
+    	//CommonStep.test.addScreencastFromPath(SeleniumUtil.takeScreenShotReturnPath());
+    	//ExtentTest test1=CommonStep.test.addScreenCaptureFromBase64String(SeleniumUtil.takeScreenShotReturnPath());
+    	//CommonStep.test.addScreenCaptureFromPath("."+SeleniumUtil.takeScreenShotReturnPath());
+    	CommonStep.test.log(Status.PASS,"first screen shot"+CommonStep.test.addScreenCaptureFromPath(SeleniumUtil.takeScreenShotReturnPath(),"firstimage"));
+    	//Login.validateLoginPageTitle();
+    	//Login.clickSignIn();
     }
 
     @When("^user enter username and password from rownum \"([^\"]*)\"$")
     public void user_enter_username_and_password_from_rownum(String rowNum) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
     	System.out.println("pritn the value"+xls.getCellData(CommonStep.getScenarioName(), "Password", Integer.parseInt(rowNum)));
+    	CommonStep.test.log(Status.PASS, SeleniumUtil.takeScreenShotReturnPath());
     }
 
     @Then("^user get the details$")
     public void user_get_the_details() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         count++;
+        CommonStep.test.log(Status.PASS, SeleniumUtil.takeScreenShotReturnPath());
     }
 }

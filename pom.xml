@@ -92,11 +92,12 @@
 	<artifactId>poi-ooxml</artifactId>
 	<version>3.17</version>
 </dependency> 
-<dependency>
+ <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>4.0.9</version>
 </dependency> 
+
 
 <!-- to read the pdf -->
 <dependency>

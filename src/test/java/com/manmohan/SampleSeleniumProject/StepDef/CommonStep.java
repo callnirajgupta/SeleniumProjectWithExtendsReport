@@ -1,5 +1,7 @@
 package com.manmohan.SampleSeleniumProject.StepDef;
 
+import java.io.IOException;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.Assume;
@@ -26,7 +28,7 @@ public class CommonStep {
    
     //helps to generate the logs in test report.
     private static int  rowNum;
-	private static ExtentTest test;
+	public static ExtentTest test;
 	private static boolean flag;
 	public static Scenario scenario;
 	private static  Logger LOGGER=LogManager.getLogger(CommonStep.class);
@@ -56,7 +58,7 @@ public class CommonStep {
 			Assume.assumeTrue(false);
 		}*/
 		
-		test = TestRunner.getExtent().createTest("Test Case "+count, scenarioName);
+		test = TestRunner.getExtent().createTest("Test Case "+scenarioName);
 	    
 		SeleniumUtil.getInstance();
 		driver=SeleniumUtil.getDriver();
@@ -72,17 +74,17 @@ public class CommonStep {
 	
 	
 	@After
-	public void tearDown(Scenario scenario){
+	public void tearDown(Scenario scenario) throws IOException{
 		LOGGER.info("I am tearDown");
 		scenario.write("I am inside tear down");
 		if(test!=null && driver != null){
 		if(scenario.isFailed()){	
 		final byte[] screenshot =  ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 		scenario.embed(screenshot, "image/png"); // stick it in the report
-		
-		test.log(Status.FAIL, MarkupHelper.createLabel(" FAILED ", ExtentColor.RED));
+		//String snappath=test.addScreencastFromPath("."+SeleniumUtil.takeScreenShotReturnPath());
+		test.log(Status.FAIL, SeleniumUtil.takeScreenShotReturnPath());
 		}else{	
-			test.log(Status.PASS, MarkupHelper.createLabel(" Passed ", ExtentColor.GREEN));
+			test.log(Status.FAIL, SeleniumUtil.takeScreenShotReturnPath());
 		}
 		
 		driver.close();
@@ -125,4 +127,6 @@ public class CommonStep {
 	 public static String getScenarioName() {
 			return scenarioName;
 		}
+	 
+	 
 }
